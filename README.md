@@ -1,54 +1,32 @@
-A First Level Header
-====================
+Enterprise Ape
+==============
 
-A Second Level Header
----------------------
+![alt text](https://www.dropbox.com/s/iuit5ui5vcfblcn/ape.jpg "Ape")
 
-### Header 3
+Powerful Software
+-----------------
 
-This is an [example link](http://example.com/).
+### Welcome to the repository
 
-> This is a blockquote.
+Feel free to access [my portfolio](http://portfolio.jordanhudgens.com/).
+
+> ## Donec malesuada aliquam gravida
+> Lorem ipsum.
 > 
-> This is the second paragraph in the blockquote.
->
-> ## This is an H2 in a blockquote
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-![alt text](http://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Gorrila_tool_use-Efi.jpg/254px-Gorrila_tool_use-Efi.jpg "Ape")
+Ut eros nisl, imperdiet id blandit vel, ultrices ut lectus. Suspendisse sed tortor lorem. *Sed mattis feugiat nunc, vitae luctus dolor pharetra non*.
 
-Some of these words *are emphasized*.
-Some of these words _are emphasized also_.
+Ut eros nisl, imperdiet id **blandit vel**.
 
-Use two asterisks for **strong emphasis**.
-Or, if you prefer, __use two underscores instead__.
+### Crazy good software
+*   Rapid development.
++   Tested.
+-   24/7 support.
 
-*   Candy.
-+   Gum.
--   Booze.
+### Reasons to choose us
+1.  Price
+2.  Precision
+3.  Performance
 
-1.  Red
-2.  Green
-3.  Blue
-
-I strongly recommend against using any `<blink>` tags.
-
-I wish SmartyPants used named entities like `&mdash;`
-instead of decimal-encoded entites like `&#8212;`.
-
-<blockquote>
-  <p>For example.</p>
-</blockquote>
-
-
-I get 10 times more traffic from [Google][1] than from
-[Yahoo][2] or [MSN][3].
-
-[1]: http://google.com/        "Google"
-[2]: http://search.yahoo.com/  "Yahoo Search"
-[3]: http://search.msn.com/    "MSN Search"
-
-
-I start my morning with a cup of coffee and
-[The New York Times][NY Times].
-
-[ny times]: http://www.nytimes.com/
+This is what ruby code would look like `puts 'Hello World'`.
