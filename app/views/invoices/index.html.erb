@@ -1,4 +1,13 @@
-<h1>Listing invoices</h1>
+<div class="row">
+  <h1>Listing invoices</h1>
+  <div class="pull-right range-query">
+    <%= form_tag invoices_path, method: :get do %>
+      <%= text_field_tag 'search[date_from]', @search.date_from %>
+      <%= text_field_tag 'search[date_to]', @search.date_to %>
+      <%= submit_tag 'Search', class: 'btn search-button' %>
+    <% end %>
+  </div>
+</div>
 
 <div class="media">
   <div class="media-body">
