@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140401022907) do
+ActiveRecord::Schema.define(version: 20140411024400) do
+
+  create_table "companies", force: true do |t|
+    t.string   "name"
+    t.string   "manager"
+    t.string   "status"
+    t.integer  "terms"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "invoices", force: true do |t|
     t.datetime "date"
