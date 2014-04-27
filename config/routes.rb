@@ -1,4 +1,6 @@
 Enterpriseape::Application.routes.draw do
+  resources :employees
+
   resources :companies do 
     collection { post :import }
   end
