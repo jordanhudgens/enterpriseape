@@ -31,7 +31,7 @@
             <td><%= invoice.date.strftime("%Y-%m-%d") %></td>
             <td><%= invoice.company %></td>
             <td><%= invoice.tax %></td>
-            <td><%= invoice.employee_id %></td>
+            <td><%= invoice.employee.name %></td>
             <td><%= invoice.status_type %></td>
             <td><%= link_to 'Show', invoice, class: 'btn btn-mini' %></td>
             <td><%= link_to 'Edit', edit_invoice_path(invoice), class: 'btn btn-mini btn-success' %></td>
