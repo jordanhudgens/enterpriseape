@@ -1,4 +1,6 @@
 Enterpriseape::Application.routes.draw do
+  resources :purchases
+
   resources :items
 
   resources :employees
