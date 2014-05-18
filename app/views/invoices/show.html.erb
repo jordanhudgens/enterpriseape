@@ -20,5 +20,28 @@
   <%= @invoice.employee.name %>
 </p>
 
+<div class="media">
+  <div class="media-body">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @purchases.each do |purchase| %>
+          <tr>
+            <td><h4><%= purchase.name %></h4></td>
+            <td><h4><%= purchase.category %></h4></td>
+            <td><h4><%= purchase.quantity %></h4></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 <%= link_to 'Edit', edit_invoice_path(@invoice) %> |
 <%= link_to 'Back', invoices_path %>
