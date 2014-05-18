@@ -1,5 +1,4 @@
-class PurchasesController < ApplicationController
-  before_action :set_purchase, only: [:show, :edit, :update, :destroy]
+class Invoices::PurchasesController < ApplicationController
 
   # GET /purchases
   # GET /purchases.json
@@ -14,6 +13,7 @@ class PurchasesController < ApplicationController
 
   # GET /purchases/new
   def new
+    @invoice = Invoice.find(params[:invoice_id])
     @purchase = Purchase.new
   end
 
@@ -24,15 +24,17 @@ class PurchasesController < ApplicationController
   # POST /purchases
   # POST /purchases.json
   def create
+    @invoice = Invoice.find(params[:invoice_id])
     @purchase = Purchase.new(purchase_params)
+    @purchase.invoice = @invoice
 
     respond_to do |format|
       if @purchase.save
-        format.html { redirect_to @purchase, notice: 'Purchase was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @purchase }
+        format.html { redirect_to @invoice, notice: 'Purchase was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @invoice }
       else
         format.html { render action: 'new' }
-        format.json { render json: @purchase.errors, status: :unprocessable_entity }
+        format.json { render json: @invoice.errors, status: :unprocessable_entity }
       end
     end
   end

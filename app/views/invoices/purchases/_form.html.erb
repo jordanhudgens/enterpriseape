@@ -1,15 +1,4 @@
-<%= form_for(@purchase) do |f| %>
-  <% if @purchase.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@purchase.errors.count, "error") %> prohibited this purchase from being saved:</h2>
-
-      <ul>
-      <% @purchase.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for [@invoice, @purchase] do |f| %>
 
   <div class="field">
     <%= f.label :name %><br>
@@ -22,10 +11,6 @@
   <div class="field">
     <%= f.label :quantity %><br>
     <%= f.number_field :quantity %>
-  </div>
-  <div class="field">
-    <%= f.label :invoice %><br>
-    <%= f.text_field :invoice %>
   </div>
   <div class="actions">
     <%= f.submit %>
