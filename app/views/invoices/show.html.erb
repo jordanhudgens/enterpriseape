@@ -28,6 +28,7 @@
           <th>Name</th>
           <th>Category</th>
           <th>Quantity</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -36,6 +37,7 @@
             <td><h4><%= purchase.name %></h4></td>
             <td><h4><%= purchase.category %></h4></td>
             <td><h4><%= purchase.quantity %></h4></td>
+            <td><h4><%= link_to "Delete", [@invoice, purchase], method: :delete, confirm: "Are you sure you want to delete this purchase?" %></h4></td>
           </tr>
         <% end %>
       </tbody>
