@@ -18,7 +18,7 @@ Enterpriseape::Application.routes.draw do
   get "welcome/features"
   
   resources :invoices do
-    resources :purchases, except: [:index], controller: 'invoices/purchases'
+    resources :purchases, except: [:index, :show], controller: 'invoices/purchases'
   end
 
   root to: 'welcome#index'
